@@ -1,0 +1,24 @@
+{
+    "model": "method",
+    "storageType": "sql",
+    "attributes": {
+        "class": "String",
+        "description": "String",
+        "formula": "String",
+        "methodDbId": "String",
+        "methodName": "String",
+        "ontologyReference": "String",
+        "reference": "String"
+    },
+    "associations": {
+        "observationVariable": {
+            "type": "to_many",
+            "target": "observationVariable",
+            "targetKey": "method_id",
+            "keyIn": "observationVariable",
+            "targetStorageType": "sql",
+            "label": "observationVariableName",
+            "sublabel": "id"
+        }
+    }
+}

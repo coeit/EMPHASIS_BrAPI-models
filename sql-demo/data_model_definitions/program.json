@@ -1,0 +1,25 @@
+{
+    "model": "program",
+    "storageType": "sql",
+    "attributes": {
+        "abbreviation": "String",
+        "commonCropName": "String",
+        "documentationURL": "String",
+        "leadPersonDbId": "String",
+        "leadPersonName": "String",
+        "objective": "String",
+        "programDbId": "String",
+        "programName": "String"
+    },
+    "associations" : {
+        "trials" : {
+            "type": "to_many",
+            "target": "trial",
+            "targetKey": "program_id",
+            "keyIn": "trial",
+            "targetStorageType": "sql",
+            "label": "trialName",
+            "sublabel": "id"
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "model": "observation",
+    "storageType": "",
+    "attributes": {
+        "germplasmDbId": "String",
+        "germplasmName": "String",
+        "observationDbId": "String",
+        "observationLevel": "String",
+        "observationTimeStamp": "String",
+        "observationUnitDbId": "String",
+        "observationUnitName": "String",
+        "observationVariableDbId": "String",
+        "observationVariableName": "String",
+        "operator": "String",
+        "studyDbId": "String",
+        "uploadedBy": "String",
+        "value": "String",
+        "season_id": "Int",
+        "observationUnit_id": "Int",
+        "study_id": "Int"
+    },
+    "associations": {
+        "season": {
+            "type": "to_one",
+            "target": "season",
+            "targetKey": "season_id",
+            "keyIn": "observation",
+            "targetStorageType": "sql",
+            "label": "season",
+            "sublabel": "id"
+        },
+        "observationUnit": {
+            "type": "to_one",
+            "target": "observationUnit",
+            "targetKey": "observationUnit_id",
+            "keyIn": "observation",
+            "targetStorageType": "sql",
+            "label": "observationUnitName",
+            "sublabel": "id"
+        }
+    }
+}

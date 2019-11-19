@@ -1,0 +1,81 @@
+{
+    "model": "study",
+    "storageType": "sql",
+    "attributes": {
+        "active": "String",
+        "commonCropName": "String",
+        "documentationURL": "String",
+        "endDate": "Date",
+        "license": "String",
+        "location_id": "Int",
+        "startDate": "Date",
+        "studyDbId": "String",
+        "studyDescription": "String",
+        "studyName": "String",
+        "studyType": "String",
+        "studyTypeDbId": "String",
+        "studyTypeName": "String",
+        "trialDbId": "String",
+        "trialName": "String",
+        "season_id" : "Int",
+        "trial_id" :  "Int"
+    },
+    "associations": {
+        "location": {
+            "type": "to_one",
+            "target": "location",
+            "targetKey": "location_id",
+            "keyIn": "study",
+            "targetStorageType": "sql",
+            "label": "locationName",
+            "sublabel": "id"
+        },
+        "season": {
+            "type": "to_one",
+            "target": "season",
+            "targetKey": "season_id",
+            "keyIn": "study",
+            "targetStorageType": "sql",
+            "label": "season",
+            "sublabel": "id"
+        },
+        "trial": {
+            "type": "to_one",
+            "target": "trial",
+            "targetKey": "trial_id",
+            "keyIn": "study",
+            "targetStorageType": "sql",
+            "label": "trialName",
+            "sublabel": "id"
+        },
+        "germplasm": {
+            "type": "to_many",
+            "target": "germplasm",
+            "targetKey": "germplasm_id",
+            "sourceKey" : "study_id",
+            "keysIn": "study_to_germplasm",
+            "targetStorageType": "sql",
+            "label": "germplasmName",
+            "sublabel": "id"
+        },
+        "observations": {
+            "type": "to_many",
+            "target": "observation",
+            "targetKey": "study_id",
+            "keyIn": "observation",
+            "targetStorageType": "sql",
+            "label": "observationName",
+            "sublabel": "id"
+        },
+        "observationVariables": {
+            "type": "to_many",
+            "target": "observationVariable",
+            "targetKey": "observationVariable_id",
+            "sourceKey": "study_id",
+            "keysIn": "study_to_observationVariable",
+            "targetStorageType": "sql",
+            "label": "observationVariableName",
+            "sublabel": "id"
+        }
+    }
+}

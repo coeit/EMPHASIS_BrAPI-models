@@ -1,0 +1,38 @@
+{
+    "model": "germplasm",
+    "storageType": "sql",
+    "attributes": {
+        "accessionNumber": "String",
+        "acquisitionDate": "String",
+        "biologicalStatusOfAccessionCode": "String",
+        "breedingMethodDbId": "String",
+        "commonCropName": "String",
+        "countryOfOriginCode": "String",
+        "defaultDisplayName": "String",
+        "documentationURL": "String",
+        "germplasmDbId": "String",
+        "germplasmGenus": "String",
+        "germplasmName": "String",
+        "germplasmPUI": "String",
+        "germplasmSpecies": "String",
+        "instituteCode": "String",
+        "instituteName": "String",
+        "pedigree": "String",
+        "seedSource": "String",
+        "speciesAuthority": "String",
+        "subtaxa": "String",
+        "subtaxaAuthority": "String"
+    },
+    "associations": {
+        "studies": {
+            "type": "to_many",
+            "target": "study",
+            "targetKey": "study_id",
+            "sourceKey" : "germplasm_id",
+            "keysIn": "study_to_germplasm",
+            "targetStorageType": "sql",
+            "label": "studyName",
+            "sublabel": "id"
+        }
+    }
+}

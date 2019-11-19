@@ -1,0 +1,18 @@
+{
+    "model": "location",
+    "storageType": "sql",
+    "attributes": {
+        "abbreviation": "String",
+        "altitude": "String",
+        "countryCode": "String",
+        "countryName": "String",
+        "documentationURL": "String",
+        "instituteAddress": "String",
+        "instituteName": "String",
+        "latitude": "String",
+        "locationDbId": "String",
+        "locationName": "String",
+        "locationType": "String",
+        "longitude": "String"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "model": "breedingMethod",
+    "storageType": "sql",
+    "attributes": {
+        "abbreviation": "String",
+        "breedingMethodDbId": "String",
+        "breedingMethodName": "String",
+        "description": "String"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "model": "trait",
+    "storageType": "sql",
+    "attributes": {
+        "attribute": "String",
+        "class": "String",
+        "description": "String",
+        "entity": "String",
+        "mainAbbreviation": "String",
+        "ontologyReference": "String",
+        "status": "String",
+        "traitDbId": "String",
+        "traitName": "String",
+        "xref": "String"
+    },
+    "associations": {
+        "observationVariable": {
+            "type": "to_many",
+            "target": "observationVariable",
+            "targetKey": "trait_id",
+            "keyIn": "observationVariable",
+            "targetStorageType": "sql",
+            "label": "observationVariableName",
+            "sublabel": "id"
+        }
+    }
+}
