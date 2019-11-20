@@ -3,7 +3,7 @@
     "storageType": "sql",
     "attributes": {
         "accessionNumber": "String",
-        "acquisitionDate": "String",
+        "acquisitionDate": "Date",
         "biologicalStatusOfAccessionCode": "String",
         "breedingMethodDbId": "String",
         "commonCropName": "String",

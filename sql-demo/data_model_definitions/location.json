@@ -9,10 +9,10 @@
         "documentationURL": "String",
         "instituteAddress": "String",
         "instituteName": "String",
-        "latitude": "String",
+        "latitude": "Float",
         "locationDbId": "String",
         "locationName": "String",
         "locationType": "String",
-        "longitude": "String"
+        "longitude": "Float"
     }
 }

@@ -1,6 +1,6 @@
 {
     "model": "observationUnit",
-    "storageType": "",
+    "storageType": "sql",
     "attributes": {
         "blockNumber": "String",
         "entryNumber": "String",
@@ -30,7 +30,7 @@
     "associations": {
         "observations": {
             "type": "to_many",
-            "target": "observations",
+            "target": "observation",
             "targetKey": "observationUnit_id",
             "keyIn": "observation",
             "targetStorageType": "sql",

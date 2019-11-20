@@ -3,7 +3,7 @@
     "storageType": "sql",
     "attributes": {
         "dataType": "String",
-        "decimalPlaces": "String",
+        "decimalPlaces": "Int",
         "ontologyReference": "String",
         "scaleDbId": "String",
         "scaleName": "String",

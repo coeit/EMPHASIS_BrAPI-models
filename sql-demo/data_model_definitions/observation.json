@@ -1,12 +1,12 @@
 {
     "model": "observation",
-    "storageType": "",
+    "storageType": "sql",
     "attributes": {
         "germplasmDbId": "String",
         "germplasmName": "String",
         "observationDbId": "String",
         "observationLevel": "String",
-        "observationTimeStamp": "String",
+        "observationTimeStamp": "DateTime",
         "observationUnitDbId": "String",
         "observationUnitName": "String",
         "observationVariableDbId": "String",

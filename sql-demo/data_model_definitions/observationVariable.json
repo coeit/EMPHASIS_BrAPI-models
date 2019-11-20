@@ -8,15 +8,12 @@
         "growthStage": "String",
         "institution": "String",
         "language": "String",
-        "method": "String",
         "ontologyDbId": "String",
         "ontologyName": "String",
         "ontologyReference": "String",
-        "scale": "String",
         "scientist": "String",
         "status": "String",
         "submissionTimestamp": "String",
-        "trait": "String",
         "xref": "String",
         "observationVariableDbId": "String",
         "observationVariableName": "String",
@@ -35,7 +32,7 @@
             "sublabel": "id"
         },
         "scale": {
-            "type": "Name",
+            "type": "to_one",
             "target": "scale",
             "targetKey": "scale_id",
             "keyIn": "observationVariable",
@@ -44,7 +41,7 @@
             "sublabel": "id"
         },
         "trait": {
-            "type": "Name",
+            "type": "to_one",
             "target": "trait",
             "targetKey": "trait_id",
             "keyIn": "observationVariable",
