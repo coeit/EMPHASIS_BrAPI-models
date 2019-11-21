@@ -7,7 +7,6 @@
         "documentationURL": "String",
         "endDate": "Date",
         "license": "String",
-        "location_id": "Int",
         "startDate": "Date",
         "studyDbId": "String",
         "studyDescription": "String",
@@ -17,6 +16,7 @@
         "studyTypeName": "String",
         "trialDbId": "String",
         "trialName": "String",
+        "location_id": "Int",
         "season_id" : "Int",
         "trial_id" :  "Int"
     },
@@ -64,7 +64,7 @@
             "targetKey": "study_id",
             "keyIn": "observation",
             "targetStorageType": "sql",
-            "label": "observationName",
+            "label": "observationVariableName",
             "sublabel": "id"
         },
         "observationVariables": {

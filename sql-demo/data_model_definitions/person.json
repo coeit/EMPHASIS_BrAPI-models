@@ -1,0 +1,15 @@
+{
+    "model": "person",
+    "storageType": "sql",
+    "attributes": {
+        "description": "String",
+        "emailAddress": "String",
+        "firstName": "String",
+        "lastName": "String",
+        "mailingAddress": "String",
+        "middleName": "String",
+        "personDbId": "String",
+        "phoneNumber": "String",
+        "userID": "String"
+    }
+}

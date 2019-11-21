@@ -24,8 +24,7 @@
         "studyDbId": "String",
         "studyName": "String",
         "trialDbId": "String",
-        "trialName": "String",
-        "location_id": "Int"
+        "trialName": "String"
     },
     "associations": {
         "observations": {
@@ -34,16 +33,7 @@
             "targetKey": "observationUnit_id",
             "keyIn": "observation",
             "targetStorageType": "sql",
-            "label": "observationName",
-            "sublabel": "id"
-        },
-        "location": {
-            "type": "to_one",
-            "target": "location",
-            "targetKey": "location_id",
-            "keyIn": "study",
-            "targetStorageType": "sql",
-            "label": "locationName",
+            "label": "observationVariableName",
             "sublabel": "id"
         }
     }
