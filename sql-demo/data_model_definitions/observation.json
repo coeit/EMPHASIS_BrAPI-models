@@ -6,7 +6,7 @@
         "germplasmName": "String",
         "observationDbId": "String",
         "observationLevel": "String",
-        "observationTimeStamp": "DateTime",
+        "observationTimeStamp": "String",
         "observationUnitDbId": "String",
         "observationUnitName": "String",
         "observationVariableDbId": "String",
@@ -15,28 +15,53 @@
         "studyDbId": "String",
         "uploadedBy": "String",
         "value": "String",
-        "season_id": "Int",
-        "observationUnit_id": "Int",
-        "study_id": "Int"
+        "seasonDbId": "String"
     },
     "associations": {
-        "season": {
+        "germplasm": {
             "type": "to_one",
-            "target": "season",
-            "targetKey": "season_id",
+            "target": "germplasm",
+            "targetKey": "germplasmDbId",
             "keyIn": "observation",
             "targetStorageType": "sql",
-            "label": "season",
-            "sublabel": "id"
+            "label": "germplasmName",
+            "sublabel": "germplasmDbId"
         },
         "observationUnit": {
             "type": "to_one",
             "target": "observationUnit",
-            "targetKey": "observationUnit_id",
+            "targetKey": "observationUnitDbId",
             "keyIn": "observation",
             "targetStorageType": "sql",
             "label": "observationUnitName",
-            "sublabel": "id"
+            "sublabel": "observationUnitDbId"
+        },
+        "observationVariable": {
+            "type": "to_one",
+            "target": "observationVariable",
+            "targetKey": "observationVariableDbId",
+            "keyIn": "observation",
+            "targetStorageType": "sql",
+            "label": "observationVariableName",
+            "sublabel": "observationVariableDbId"
+        },
+        "season": {
+            "type": "to_one",
+            "target": "season",
+            "targetKey": "seasonDbId",
+            "keyIn": "observation",
+            "targetStorageType": "sql",
+            "label": "season",
+            "sublabel": "seasonDbId"
+        },
+        "study": {
+            "type": "to_one",
+            "target": "study",
+            "targetKey": "studyDbId",
+            "keyIn": "observation",
+            "targetStorageType": "sql",
+            "label": "studyName",
+            "sublabel": "studyDbId"
         }
     }
 }
