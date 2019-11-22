@@ -6,8 +6,10 @@
         "entryNumber": "String",
         "entryType": "String",
         "germplasmDbId": "String",
+        "germplasm_id": "Int",
         "germplasmName": "String",
         "locationDbId": "String",
+        "location_id": "Int",
         "locationName": "String",
         "observationLevel": "String",
         "observationLevels": "String",
@@ -19,11 +21,14 @@
         "positionCoordinateX": "String",
         "positionCoordinateY": "String",
         "programDbId": "String",
+        "program_id": "Int",
         "programName": "String",
         "replicate": "String",
         "studyDbId": "String",
+        "study_id": "Int",
         "studyName": "String",
         "trialDbId": "String",
+        "trial_id": "Int",
         "trialName": "String"
     },
     "associations": {
@@ -34,7 +39,52 @@
             "keyIn": "observation",
             "targetStorageType": "sql",
             "label": "observationVariableName",
-            "sublabel": "id"
+            "sublabel": "observationsDbId"
+        },
+        "germplasm": {
+            "type": "to_one",
+            "target": "germplasm",
+            "targetKey": "germplasm_id",
+            "keyIn": "observationUnit",
+            "targetStorageType": "sql",
+            "label": "germplasmName",
+            "sublabel": "germplasmDbId"
+        },
+        "location": {
+            "type": "to_one",
+            "target": "location",
+            "targetKey": "location_id",
+            "keyIn": "observationUnit",
+            "targetStorageType": "sql",
+            "label": "locationName",
+            "sublabel": "locationDbId"
+        },
+        "program": {
+            "type": "to_one",
+            "target": "program",
+            "targetKey": "program_id",
+            "keyIn": "observationUnit",
+            "targetStorageType": "sql",
+            "label": "programName",
+            "sublabel": "programDbId"
+        },
+        "study": {
+            "type": "to_one",
+            "target": "study",
+            "targetKey": "study_id",
+            "keyIn": "observationUnit",
+            "targetStorageType": "sql",
+            "label": "studyName",
+            "sublabel": "studyDbId"
+        },
+        "trial": {
+            "type": "to_one",
+            "target": "trial",
+            "targetKey": "trial_id",
+            "keyIn": "observationUnit",
+            "targetStorageType": "sql",
+            "label": "trialName",
+            "sublabel": "trialDbId"
         }
     }
 }

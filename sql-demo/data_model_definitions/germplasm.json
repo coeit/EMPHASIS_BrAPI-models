@@ -21,18 +21,18 @@
         "seedSource": "String",
         "speciesAuthority": "String",
         "subtaxa": "String",
-        "subtaxaAuthority": "String"
+        "subtaxaAuthority": "String",
+        "breedingMethod_id": "Int"
     },
     "associations": {
-        "studies": {
-            "type": "to_many",
-            "target": "study",
-            "targetKey": "study_id",
-            "sourceKey" : "germplasm_id",
-            "keysIn": "study_to_germplasm",
+        "breedingMethod": {
+            "type": "to_one",
+            "target": "breedingMethod",
+            "targetKey": "breedingMethod_id",
+            "keyIn": "germplasm",
             "targetStorageType": "sql",
-            "label": "studyName",
-            "sublabel": "id"
+            "label": "breedingMethodName",
+            "sublabel": "breedingMethodDbId"
         }
     }
 }

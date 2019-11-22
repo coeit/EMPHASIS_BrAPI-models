@@ -15,13 +15,17 @@
         "studyDbId": "String",
         "uploadedBy": "String",
         "value": "String",
-        "seasonDbId": "String"
+        "germplasm_id": "Int",
+        "observationUnit_id": "Int",
+        "observationVariable_id": "Int",
+        "season_id": "Int",
+        "study_id": "Int"
     },
     "associations": {
         "germplasm": {
             "type": "to_one",
             "target": "germplasm",
-            "targetKey": "germplasmDbId",
+            "targetKey": "germplasm_id",
             "keyIn": "observation",
             "targetStorageType": "sql",
             "label": "germplasmName",
@@ -30,7 +34,7 @@
         "observationUnit": {
             "type": "to_one",
             "target": "observationUnit",
-            "targetKey": "observationUnitDbId",
+            "targetKey": "observationUnit_id",
             "keyIn": "observation",
             "targetStorageType": "sql",
             "label": "observationUnitName",
@@ -39,7 +43,7 @@
         "observationVariable": {
             "type": "to_one",
             "target": "observationVariable",
-            "targetKey": "observationVariableDbId",
+            "targetKey": "observationVariable",
             "keyIn": "observation",
             "targetStorageType": "sql",
             "label": "observationVariableName",
@@ -48,7 +52,7 @@
         "season": {
             "type": "to_one",
             "target": "season",
-            "targetKey": "seasonDbId",
+            "targetKey": "season_id",
             "keyIn": "observation",
             "targetStorageType": "sql",
             "label": "season",
@@ -57,7 +61,7 @@
         "study": {
             "type": "to_one",
             "target": "study",
-            "targetKey": "studyDbId",
+            "targetKey": "study_id",
             "keyIn": "observation",
             "targetStorageType": "sql",
             "label": "studyName",

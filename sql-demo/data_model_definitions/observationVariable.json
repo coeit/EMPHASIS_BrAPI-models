@@ -8,9 +8,6 @@
         "growthStage": "String",
         "institution": "String",
         "language": "String",
-        "ontologyDbId": "String",
-        "ontologyName": "String",
-        "ontologyReference": "String",
         "scientist": "String",
         "status": "String",
         "submissionTimestamp": "String",
@@ -47,16 +44,6 @@
             "keyIn": "observationVariable",
             "targetStorageType": "sql",
             "label": "traitName",
-            "sublabel": "id"
-        },
-        "studies": {
-            "type": "to_many",
-            "target": "study",
-            "targetKey": "study_id",
-            "sourceKey" : "observationVariable_id",
-            "keysIn": "study_to_observationVariable",
-            "targetStorageType": "sql",
-            "label": "studyName",
             "sublabel": "id"
         }
     }

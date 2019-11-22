@@ -28,16 +28,17 @@
             "keyIn": "study",
             "targetStorageType": "sql",
             "label": "locationName",
-            "sublabel": "id"
+            "sublabel": "locationDbId"
         },
         "season": {
-            "type": "to_one",
+            "type": "to_many",
             "target": "season",
             "targetKey": "season_id",
-            "keyIn": "study",
+            "sourceKey": "study_id",
+            "keysIn": "study_to_season",
             "targetStorageType": "sql",
             "label": "season",
-            "sublabel": "id"
+            "sublabel": "seasonDbId"
         },
         "trial": {
             "type": "to_one",
@@ -46,17 +47,7 @@
             "keyIn": "study",
             "targetStorageType": "sql",
             "label": "trialName",
-            "sublabel": "id"
-        },
-        "germplasm": {
-            "type": "to_many",
-            "target": "germplasm",
-            "targetKey": "germplasm_id",
-            "sourceKey" : "study_id",
-            "keysIn": "study_to_germplasm",
-            "targetStorageType": "sql",
-            "label": "germplasmName",
-            "sublabel": "id"
+            "sublabel": "seasonDbId"
         },
         "observations": {
             "type": "to_many",
@@ -65,17 +56,7 @@
             "keyIn": "observation",
             "targetStorageType": "sql",
             "label": "observationVariableName",
-            "sublabel": "id"
-        },
-        "observationVariables": {
-            "type": "to_many",
-            "target": "observationVariable",
-            "targetKey": "observationVariable_id",
-            "sourceKey": "study_id",
-            "keysIn": "study_to_observationVariable",
-            "targetStorageType": "sql",
-            "label": "observationVariableName",
-            "sublabel": "id"
+            "sublabel": "observationDbId"
         }
     }
 }

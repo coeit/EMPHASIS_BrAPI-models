@@ -1,0 +1,9 @@
+{
+    "model" : "study_to_season",
+    "storageType" : "sql",
+    "attributes" : {
+      "study_id" : "Int",
+      "season_id" : "Int"
+    }
+  }
+  
