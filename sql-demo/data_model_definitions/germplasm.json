@@ -33,6 +33,24 @@
             "targetStorageType": "sql",
             "label": "breedingMethodName",
             "sublabel": "breedingMethodDbId"
+        },
+        "observations": {
+            "type": "to_many",
+            "target": "observation",
+            "targetKey": "germplasm_id",
+            "keyIn": "observation",
+            "targetStorageType": "sql",
+            "label": "observationVariableName",
+            "sublabel": "observationDbId"
+        },
+        "observationUnits": {
+            "type": "to_many",
+            "target": "observationUnit",
+            "targetKey": "germplasm_id",
+            "keyIn": "observationUnit",
+            "targetStorageType": "sql",
+            "label": "observationUnit_id",
+            "sublabel": "observationUnitDbId"
         }
     }
 }

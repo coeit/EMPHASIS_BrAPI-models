@@ -6,5 +6,16 @@
         "breedingMethodDbId": "String",
         "breedingMethodName": "String",
         "description": "String"
+    },
+    "associations": {
+        "germplasm": {
+            "type": "to_many",
+            "target": "germplasm",
+            "targetKey": "breedingMethod_id",
+            "keyIn": "germplasm",
+            "targetStorageType": "sql",
+            "label": "germplasmName",
+            "sublabel": "germplasmDbId"
+        }
     }
 }
