@@ -31,6 +31,15 @@
             "targetStorageType": "sql",
             "label": "programName",
             "sublabel": "id"
+        },
+        "observationUnits": {
+            "type": "to_many",
+            "target": "observationUnit",
+            "targetKey": "trial_id",
+            "keyIn": "observationUnit",
+            "targetStorageType": "sql",
+            "label": "observationUnit_id",
+            "sublabel": "observationUnitDbId"
         }
     }
 }

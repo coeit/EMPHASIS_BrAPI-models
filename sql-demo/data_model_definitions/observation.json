@@ -43,7 +43,7 @@
         "observationVariable": {
             "type": "to_one",
             "target": "observationVariable",
-            "targetKey": "observationVariable",
+            "targetKey": "observationVariable_id",
             "keyIn": "observation",
             "targetStorageType": "sql",
             "label": "observationVariableName",

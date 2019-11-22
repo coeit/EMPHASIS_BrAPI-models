@@ -45,6 +45,15 @@
             "targetStorageType": "sql",
             "label": "traitName",
             "sublabel": "id"
+        },
+        "observations": {
+            "type": "to_many",
+            "target": "observation",
+            "targetKey": "observationVariable_id",
+            "keyIn": "observation",
+            "targetStorageType": "sql",
+            "label": "observationVariableName",
+            "sublabel": "observationDbId"
         }
     }
 }
