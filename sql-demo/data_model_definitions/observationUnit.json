@@ -39,7 +39,7 @@
             "keyIn": "observation",
             "targetStorageType": "sql",
             "label": "observationVariableName",
-            "sublabel": "observationsDbId"
+            "sublabel": "observationDbId"
         },
         "germplasm": {
             "type": "to_one",

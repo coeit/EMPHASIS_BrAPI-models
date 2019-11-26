@@ -47,7 +47,7 @@
             "keyIn": "study",
             "targetStorageType": "sql",
             "label": "trialName",
-            "sublabel": "seasonDbId"
+            "sublabel": "trialDbId"
         },
         "observations": {
             "type": "to_many",
@@ -64,7 +64,7 @@
             "targetKey": "study_id",
             "keyIn": "observationUnit",
             "targetStorageType": "sql",
-            "label": "observationUnit_id",
+            "label": "observationUnitName",
             "sublabel": "observationUnitDbId"
         }
     }
