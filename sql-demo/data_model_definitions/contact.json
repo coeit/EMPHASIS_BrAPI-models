@@ -1,0 +1,12 @@
+{
+    "model": "contact",
+    "storageType": "sql",
+    "attributes": {
+        "contactDbId": "String",
+        "email": "String",
+        "instituteName": "String",
+        "name": "String",
+        "orcid": "String",
+        "type": "String"
+    }
+}

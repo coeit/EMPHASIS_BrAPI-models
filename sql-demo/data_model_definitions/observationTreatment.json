@@ -1,0 +1,8 @@
+{
+    "model": "observationTreatment",
+    "storageType": "sql",
+    "attributes": {
+        "factor": "String",
+        "modality": "String"
+    }
+}

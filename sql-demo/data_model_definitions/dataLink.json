@@ -1,0 +1,9 @@
+{
+    "model": "dataLink",
+    "storageType": "sql",
+    "attributes": {
+        "dataLinkName": "String",
+        "type": "String",
+        "url": "String"
+    }
+}
