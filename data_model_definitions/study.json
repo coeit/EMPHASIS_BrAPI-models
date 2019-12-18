@@ -14,7 +14,8 @@
         "studyName": "String",
         "studyType": "String",
         "trialDbId": "String",
-        "trialName": "String"
+        "trialName": "String",
+        "studyDbId": "String"
     },
     "associations": {
         "contacts": {
