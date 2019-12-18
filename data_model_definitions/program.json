@@ -1,0 +1,33 @@
+{
+    "model": "Program",
+    "storageType": "",
+    "attributes": {
+        "abbreviation": "String",
+        "commonCropName": "String",
+        "documentationURL": "String",
+        "leadPersonDbId": "String",
+        "leadPersonName": "String",
+        "objective": "String",
+        "programName": "String"
+    },
+    "associations": {
+        "additionalInfo": {
+            "type": "to_one",
+            "target": "additionalInfo",
+            "targetKey": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "additionalInfoName",
+            "sublabel": "additionalInfoDbId"
+        },
+        "leadPerson": {
+            "type": "to_one",
+            "target": "leadPerson",
+            "targetKey": "leadPersonDbId",
+            "keyIn": "Program",
+            "targetStorageType": "",
+            "label": "leadPersonName",
+            "sublabel": "leadPersonDbId"
+        }
+    }
+}

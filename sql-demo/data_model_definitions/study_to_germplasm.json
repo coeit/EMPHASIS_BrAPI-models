@@ -1,9 +1,0 @@
-{
-    "model" : "study_to_germplasm",
-    "storageType" : "sql",
-    "attributes" : {
-      "study_id" : "Int",
-      "germplasm_id" : "Int"
-    }
-  }
-  

@@ -1,9 +1,0 @@
-{
-    "model" : "study_to_observationVariable",
-    "storageType" : "sql",
-    "attributes" : {
-      "study_id" : "Int",
-      "observationVariable_id" : "Int"
-    }
-  }
-  
