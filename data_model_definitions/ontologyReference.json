@@ -1,0 +1,21 @@
+{
+    "model": "OntologyReference",
+    "storageType": "",
+    "attributes": {
+        "documentationURL": "String",
+        "ontologyDbId": "String",
+        "ontologyName": "String",
+        "version": "String"
+    },
+    "associations": {
+        "additionalInfo": {
+            "type": "to_one",
+            "target": "additionalInfo",
+            "targetKey": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "additionalInfoName",
+            "sublabel": "additionalInfoDbId"
+        }
+    }
+}

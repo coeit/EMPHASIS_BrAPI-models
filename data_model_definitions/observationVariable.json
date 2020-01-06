@@ -1,0 +1,87 @@
+{
+    "model": "VariableBaseClass",
+    "storageType": "",
+    "attributes": {
+        "commonCropName": "String",
+        "defaultValue": "String",
+        "documentationURL": "String",
+        "growthStage": "String",
+        "institution": "String",
+        "language": "String",
+        "scientist": "String",
+        "status": "String",
+        "submissionTimestamp": "String",
+        "xref": "String",
+        "observationVariableDbId": "String",
+        "observationVariableName": "String"
+    },
+    "associations": {
+        "contextOfUse": {
+            "type": "to_many",
+            "target": "contextOfUse",
+            "targetKey": "contextOfUse_id",
+            "sourceKey": "",
+            "keysIn": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "contextOfUseName",
+            "sublabel": "contextOfUseDbId"
+        },
+        "synonyms": {
+            "type": "to_many",
+            "target": "synonyms",
+            "targetKey": "synonyms_id",
+            "sourceKey": "",
+            "keysIn": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "synonymsName",
+            "sublabel": "synonymsDbId"
+        },
+        "additionalInfo": {
+            "type": "to_one",
+            "target": "additionalInfo",
+            "targetKey": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "additionalInfoName",
+            "sublabel": "additionalInfoDbId"
+        },
+        "method": {
+            "type": "to_one",
+            "target": "method",
+            "targetKey": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "methodName",
+            "sublabel": "methodDbId"
+        },
+        "ontologyReference": {
+            "type": "to_one",
+            "target": "ontologyReference",
+            "targetKey": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "ontologyReferenceName",
+            "sublabel": "ontologyReferenceDbId"
+        },
+        "scale": {
+            "type": "to_one",
+            "target": "scale",
+            "targetKey": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "scaleName",
+            "sublabel": "scaleDbId"
+        },
+        "trait": {
+            "type": "to_one",
+            "target": "trait",
+            "targetKey": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "traitName",
+            "sublabel": "traitDbId"
+        }
+    }
+}

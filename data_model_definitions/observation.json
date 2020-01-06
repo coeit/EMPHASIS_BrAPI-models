@@ -1,0 +1,74 @@
+{
+    "model": "Observation",
+    "storageType": "",
+    "attributes": {
+        "collector": "String",
+        "germplasmDbId": "String",
+        "germplasmName": "String",
+        "observationTimeStamp": "String",
+        "observationUnitDbId": "String",
+        "observationUnitName": "String",
+        "observationVariableDbId": "String",
+        "observationVariableName": "String",
+        "studyDbId": "String",
+        "uploadedBy": "String",
+        "value": "String",
+        "observationDbId": "String"
+    },
+    "associations": {
+        "additionalInfo": {
+            "type": "to_one",
+            "target": "additionalInfo",
+            "targetKey": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "additionalInfoName",
+            "sublabel": "additionalInfoDbId"
+        },
+        "season": {
+            "type": "to_one",
+            "target": "season",
+            "targetKey": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "seasonName",
+            "sublabel": "seasonDbId"
+        },
+        "germplasm": {
+            "type": "to_one",
+            "target": "germplasm",
+            "targetKey": "germplasmDbId",
+            "keyIn": "Observation",
+            "targetStorageType": "",
+            "label": "germplasmName",
+            "sublabel": "germplasmDbId"
+        },
+        "observationUnit": {
+            "type": "to_one",
+            "target": "observationUnit",
+            "targetKey": "observationUnitDbId",
+            "keyIn": "Observation",
+            "targetStorageType": "",
+            "label": "observationUnitName",
+            "sublabel": "observationUnitDbId"
+        },
+        "observationVariable": {
+            "type": "to_one",
+            "target": "observationVariable",
+            "targetKey": "observationVariableDbId",
+            "keyIn": "Observation",
+            "targetStorageType": "",
+            "label": "observationVariableName",
+            "sublabel": "observationVariableDbId"
+        },
+        "study": {
+            "type": "to_one",
+            "target": "study",
+            "targetKey": "studyDbId",
+            "keyIn": "Observation",
+            "targetStorageType": "",
+            "label": "studyName",
+            "sublabel": "studyDbId"
+        }
+    }
+}

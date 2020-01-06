@@ -1,0 +1,109 @@
+{
+    "model": "ObservationUnit",
+    "storageType": "",
+    "attributes": {
+        "germplasmDbId": "String",
+        "germplasmName": "String",
+        "locationDbId": "String",
+        "locationName": "String",
+        "observationLevel": "String",
+        "observationUnitName": "String",
+        "observationUnitPUI": "String",
+        "plantNumber": "String",
+        "plotNumber": "String",
+        "programDbId": "String",
+        "programName": "String",
+        "studyDbId": "String",
+        "studyName": "String",
+        "trialDbId": "String",
+        "trialName": "String",
+        "observationUnitDbId": "String"
+    },
+    "associations": {
+        "observationUnitXref": {
+            "type": "to_many",
+            "target": "observationUnitXref",
+            "targetKey": "observationUnitXref_id",
+            "sourceKey": "",
+            "keysIn": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "observationUnitXrefName",
+            "sublabel": "observationUnitXrefDbId"
+        },
+        "treatments": {
+            "type": "to_many",
+            "target": "treatments",
+            "targetKey": "treatments_id",
+            "sourceKey": "",
+            "keysIn": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "treatmentsName",
+            "sublabel": "treatmentsDbId"
+        },
+        "additionalInfo": {
+            "type": "to_one",
+            "target": "additionalInfo",
+            "targetKey": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "additionalInfoName",
+            "sublabel": "additionalInfoDbId"
+        },
+        "observationUnitPosition": {
+            "type": "to_one",
+            "target": "observationUnitPosition",
+            "targetKey": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "observationUnitPositionName",
+            "sublabel": "observationUnitPositionDbId"
+        },
+        "germplasm": {
+            "type": "to_one",
+            "target": "germplasm",
+            "targetKey": "germplasmDbId",
+            "keyIn": "ObservationUnit",
+            "targetStorageType": "",
+            "label": "germplasmName",
+            "sublabel": "germplasmDbId"
+        },
+        "location": {
+            "type": "to_one",
+            "target": "location",
+            "targetKey": "locationDbId",
+            "keyIn": "ObservationUnit",
+            "targetStorageType": "",
+            "label": "locationName",
+            "sublabel": "locationDbId"
+        },
+        "program": {
+            "type": "to_one",
+            "target": "program",
+            "targetKey": "programDbId",
+            "keyIn": "ObservationUnit",
+            "targetStorageType": "",
+            "label": "programName",
+            "sublabel": "programDbId"
+        },
+        "study": {
+            "type": "to_one",
+            "target": "study",
+            "targetKey": "studyDbId",
+            "keyIn": "ObservationUnit",
+            "targetStorageType": "",
+            "label": "studyName",
+            "sublabel": "studyDbId"
+        },
+        "trial": {
+            "type": "to_one",
+            "target": "trial",
+            "targetKey": "trialDbId",
+            "keyIn": "ObservationUnit",
+            "targetStorageType": "",
+            "label": "trialName",
+            "sublabel": "trialDbId"
+        }
+    }
+}

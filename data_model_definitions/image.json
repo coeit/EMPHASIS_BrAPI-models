@@ -1,0 +1,69 @@
+{
+    "model": "Image",
+    "storageType": "",
+    "attributes": {
+        "copyright": "String",
+        "description": "String",
+        "imageFileName": "String",
+        "imageFileSize": "Int",
+        "imageHeight": "Int",
+        "imageName": "String",
+        "imageTimeStamp": "String",
+        "imageURL": "String",
+        "imageWidth": "Int",
+        "mimeType": "String",
+        "observationUnitDbId": "String",
+        "imageDbId": "String"
+    },
+    "associations": {
+        "descriptiveOntologyTerms": {
+            "type": "to_many",
+            "target": "descriptiveOntologyTerms",
+            "targetKey": "descriptiveOntologyTerms_id",
+            "sourceKey": "",
+            "keysIn": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "descriptiveOntologyTermsName",
+            "sublabel": "descriptiveOntologyTermsDbId"
+        },
+        "observationDbIds": {
+            "type": "to_many",
+            "target": "observationDbIds",
+            "targetKey": "observationDbIds_id",
+            "sourceKey": "",
+            "keysIn": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "observationDbIdsName",
+            "sublabel": "observationDbIdsDbId"
+        },
+        "additionalInfo": {
+            "type": "to_one",
+            "target": "additionalInfo",
+            "targetKey": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "additionalInfoName",
+            "sublabel": "additionalInfoDbId"
+        },
+        "imageLocation": {
+            "type": "to_one",
+            "target": "imageLocation",
+            "targetKey": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "imageLocationName",
+            "sublabel": "imageLocationDbId"
+        },
+        "observationUnit": {
+            "type": "to_one",
+            "target": "observationUnit",
+            "targetKey": "observationUnitDbId",
+            "keyIn": "Image",
+            "targetStorageType": "",
+            "label": "observationUnitName",
+            "sublabel": "observationUnitDbId"
+        }
+    }
+}

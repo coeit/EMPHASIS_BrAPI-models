@@ -1,0 +1,41 @@
+{
+    "model": "Location",
+    "storageType": "",
+    "attributes": {
+        "abbreviation": "String",
+        "coordinateDescription": "String",
+        "countryCode": "String",
+        "countryName": "String",
+        "documentationURL": "String",
+        "environmentType": "String",
+        "exposure": "String",
+        "instituteAddress": "String",
+        "instituteName": "String",
+        "locationName": "String",
+        "locationType": "String",
+        "siteStatus": "String",
+        "slope": "String",
+        "topography": "String",
+        "locationDbId": "String"
+    },
+    "associations": {
+        "additionalInfo": {
+            "type": "to_one",
+            "target": "additionalInfo",
+            "targetKey": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "additionalInfoName",
+            "sublabel": "additionalInfoDbId"
+        },
+        "coordinates": {
+            "type": "to_one",
+            "target": "coordinates",
+            "targetKey": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "coordinatesName",
+            "sublabel": "coordinatesDbId"
+        }
+    }
+}
