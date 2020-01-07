@@ -1,0 +1,13 @@
+{
+    "model": "EnvironmentParameter",
+    "storageType": "",
+    "attributes": {
+        "description": "String",
+        "parameterName": "String",
+        "parameterPUI": "String",
+        "unit": "String",
+        "unitPUI": "String",
+        "value": "String",
+        "valuePUI": "String"
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "model": "Event",
+    "storageType": "",
+    "attributes": {
+        "eventDbId": "String",
+        "eventDescription": "String",
+        "eventType": "String",
+        "eventTypeDbId": "String",
+        "studyDbId": "String"
+    },
+    "associations": {
+        "date": {
+            "type": "to_many",
+            "target": "date",
+            "targetKey": "date_id",
+            "sourceKey": "",
+            "keysIn": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "dateName",
+            "sublabel": "dateDbId"
+        },
+        "eventParameters": {
+            "type": "to_many",
+            "target": "eventParameters",
+            "targetKey": "eventParameters_id",
+            "sourceKey": "",
+            "keysIn": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "eventParametersName",
+            "sublabel": "eventParametersDbId"
+        },
+        "observationUnitDbIds": {
+            "type": "to_many",
+            "target": "observationUnitDbIds",
+            "targetKey": "observationUnitDbIds_id",
+            "sourceKey": "",
+            "keysIn": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "observationUnitDbIdsName",
+            "sublabel": "observationUnitDbIdsDbId"
+        },
+        "additionalInfo": {
+            "type": "to_one",
+            "target": "additionalInfo",
+            "targetKey": "",
+            "keyIn": "",
+            "targetStorageType": "",
+            "label": "additionalInfoName",
+            "sublabel": "additionalInfoDbId"
+        },
+        "eventType": {
+            "type": "to_one",
+            "target": "eventType",
+            "targetKey": "eventTypeDbId",
+            "keyIn": "Event",
+            "targetStorageType": "",
+            "label": "eventTypeName",
+            "sublabel": "eventTypeDbId"
+        },
+        "study": {
+            "type": "to_one",
+            "target": "study",
+            "targetKey": "studyDbId",
+            "keyIn": "Event",
+            "targetStorageType": "",
+            "label": "studyName",
+            "sublabel": "studyDbId"
+        }
+    }
+}
