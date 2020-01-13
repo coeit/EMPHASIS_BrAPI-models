@@ -1,0 +1,32 @@
+{
+    "model": "Method",
+    "storageType": "",
+    "attributes": {
+        "description": "String",
+        "formula": "String",
+        "methodClass": "String",
+        "methodName": "String",
+        "reference": "String",
+        "methodDbId": "String",
+
+        "ontologyDbId": "String"
+    },
+    "associations": {
+        "ObservationVariables": {
+            "type": "to_many",
+            "target": "ObservationVariable",
+            "targetKey": "methodDbId",
+            "keyIn": "ObservationVariable",
+            "targetStorageType": "",
+            "label": "observationVariableName"
+        },
+        "OntologyReference": {
+            "type": "to_one",
+            "target": "OntologyReference",
+            "targetKey": "ontologyDbId",
+            "keyIn": "Method",
+            "targetStorageType": "",
+            "label": "ontologyName"
+        }
+    }
+}

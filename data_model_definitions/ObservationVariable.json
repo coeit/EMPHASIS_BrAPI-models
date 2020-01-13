@@ -1,0 +1,65 @@
+{
+    "model": "ObservationVariable",
+    "storageType": "",
+    "attributes": {
+        "commonCropName": "String",
+        "defaultValue": "String",
+        "documentationURL": "String",
+        "growthStage": "String",
+        "institution": "String",
+        "language": "String",
+        "scientist": "String",
+        "status": "String",
+        "submissionTimestamp": "String",
+        "xref": "String",
+        "observationVariableDbId": "String",
+        "observationVariableName": "String",
+
+        "methodDbId": "String",
+        "scaleDbId": "String",
+        "traitDbId": "String",
+        "ontologyDbId": "String"
+    },
+    "associations": {
+        "Method": {
+            "type": "to_one",
+            "target": "Method",
+            "targetKey": "methodDbId",
+            "keyIn": "ObservationVariable",
+            "targetStorageType": "",
+            "label": "methodName"
+        },
+        "OntologyReference": {
+            "type": "to_one",
+            "target": "OntologyReference",
+            "targetKey": "ontologyDbId",
+            "keyIn": "ObservationVariable",
+            "targetStorageType": "",
+            "label": "ontologyName"
+        },
+        "Scale": {
+            "type": "to_one",
+            "target": "Scale",
+            "targetKey": "scaleDbId",
+            "keyIn": "ObservationVariable",
+            "targetStorageType": "",
+            "label": "scaleName"
+        },
+        "Trait": {
+            "type": "to_one",
+            "target": "Trait",
+            "targetKey": "traitDbId",
+            "keyIn": "ObservationVariable",
+            "targetStorageType": "",
+            "label": "traitName"
+        },
+        "Observations": {
+            "type": "to_many",
+            "target": "Observation",
+            "targetKey": "observationVariableDbId",
+            "keyIn": "Observation",
+            "targetStorageType": "",
+            "label": "observationVariableName"
+        }
+    }
+}

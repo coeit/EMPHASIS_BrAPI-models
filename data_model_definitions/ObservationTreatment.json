@@ -1,0 +1,20 @@
+{
+    "model": "ObservationTreatment",
+    "storageType": "",
+    "attributes": {
+        "factor": "String",
+        "modality": "String",
+
+        "observationUnitDbId": "String"
+    },
+    "associations": {
+        "ObservationUnit": {
+            "type": "to_one",
+            "target": "ObservationUnit",
+            "targetKey": "observationUnitDbId",
+            "keyIn": "ObservationTreatment",
+            "targetStorageType": "",
+            "label": "observationUnitName"
+        }
+    }
+}

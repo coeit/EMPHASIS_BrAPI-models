@@ -1,0 +1,8 @@
+{
+    "model": "Study_to_Season",
+    "storageType": "",
+    "attributes":{
+        "studyDbId": "String",
+        "seasonDbId": "String"
+    }
+}

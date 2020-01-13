@@ -1,0 +1,83 @@
+{
+    "model": "Study",
+    "storageType": "",
+    "attributes": {
+        "active": "boolean",
+        "commonCropName": "String",
+        "culturalPractices": "String",
+        "documentationURL": "String",
+        "endDate": "String",
+        "license": "String",
+        "observationUnitsDescription": "String",
+        "startDate": "String",
+        "studyDescription": "String",
+        "studyName": "String",
+        "studyType": "String",
+        "trialDbId": "String",
+        "trialName": "String",
+        "studyDbId": "String",
+
+        "locationDbId": "String"
+    },
+    "associations": {
+        "Contacts": {
+            "type": "to_many",
+            "target": "Contact",
+            "targetKey": "contactDbId",
+            "sourceKey": "studyDbId",
+            "keysIn": "Study_to_Contact",
+            "targetStorageType": "",
+            "label": "name"
+        },
+        "EnvironmentParameters": {
+            "type": "to_many",
+            "target": "EnvironmentParameter",
+            "targetKey": "studyDbId",
+            "keyIn": "EnvironmentParameter",
+            "targetStorageType": "",
+            "label": "parameterName",
+            "sublabel": "environmentParametersDbId"
+        },
+        "Seasons": {
+            "type": "to_many",
+            "target": "Season",
+            "targetKey": "seasonDbId",
+            "sourceKey": "studyDbId",
+            "keysIn": "Study_to_Season",
+            "targetStorageType": "",
+            "label": "season"
+        },
+        "Location": {
+            "type": "to_one",
+            "target": "Location",
+            "targetKey": "locationDbId",
+            "keyIn": "Study",
+            "targetStorageType": "",
+            "label": "locationName"
+        },
+        "Trial": {
+            "type": "to_one",
+            "target": "Trial",
+            "targetKey": "trialDbId",
+            "keyIn": "Study",
+            "targetStorageType": "",
+            "label": "trialName"
+        },
+        "ObservationUnits": {
+            "type": "to_many",
+            "target": "ObservationUnit",
+            "targetKey": "studyDbId",
+            "keyIn": "ObservationUnit",
+            "targetStorageType": "",
+            "label": "observationUnitName"
+        },
+        "Observations": {
+            "type": "to_many",
+            "target": "Observation",
+            "targetKey": "studyDbId",
+            "keyIn": "Observation",
+            "targetStorageType": "",
+            "label": "observationVariableName"
+        }
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "model": "Germplasm",
+    "storageType": "",
+    "attributes": {
+        "accessionNumber": "String",
+        "acquisitionDate": "String",
+        "breedingMethodDbId": "String",
+        "commonCropName": "String",
+        "countryOfOriginCode": "String",
+        "defaultDisplayName": "String",
+        "documentationURL": "String",
+        "germplasmGenus": "String",
+        "germplasmName": "String",
+        "germplasmPUI": "String",
+        "germplasmPreprocessing": "String",
+        "germplasmSpecies": "String",
+        "germplasmSubtaxa": "String",
+        "instituteCode": "String",
+        "instituteName": "String",
+        "pedigree": "String",
+        "seedSource": "String",
+        "seedSourceDescription": "String",
+        "speciesAuthority": "String",
+        "subtaxaAuthority": "String",
+        "xref": "String",
+        "germplasmDbId": "String",
+
+        "biologicalStatusOfAccessionCode": "String"
+    },
+    "associations": {
+        "BreedingMethod": {
+            "type": "to_one",
+            "target": "BreedingMethod",
+            "targetKey": "BreedingMethodDbId",
+            "keyIn": "Germplasm",
+            "targetStorageType": "",
+            "label": "breedingMethodName"
+        },
+        "ObservationUnits": {
+            "type": "to_many",
+            "target": "ObservationUnit",
+            "targetKey": "germplasmDbId",
+            "keyIn": "ObservationUnit",
+            "targetStorageType": "",
+            "label": "observationUnitName"
+        },
+        "Observations": {
+            "type": "to_many",
+            "target": "Observation",
+            "targetKey": "germplasmDbId",
+            "keyIn": "Observation",
+            "targetStorageType": "",
+            "label": "observationVariableName"
+        }
+    }
+}

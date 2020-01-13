@@ -1,0 +1,32 @@
+{
+    "model": "Contact",
+    "storageType": "",
+    "attributes": {
+        "contactDbId": "String",
+        "email": "String",
+        "instituteName": "String",
+        "name": "String",
+        "orcid": "String",
+        "type": "String"
+    },
+    "associations": {
+        "Studies": {
+            "type": "to_many",
+            "target": "Study",
+            "targetKey": "studyDbId",
+            "sourceKey": "contactDbId",
+            "keysIn": "Study_to_Contact",
+            "targetStorageType": "",
+            "label": "studyName"
+        },
+        "Trials": {
+            "type": "to_many",
+            "target": "Trial",
+            "targetKey": "trialDbId",
+            "sourceKey": "contactDbId",
+            "keysIn": "Trial_to_Contact",
+            "targetStorageType": "",
+            "label": "trialName"
+        }
+    }
+}

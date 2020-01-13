@@ -1,0 +1,31 @@
+{
+    "model": "Scale",
+    "storageType": "",
+    "attributes": {
+        "decimalPlaces": "Int",
+        "scaleName": "String",
+        "xref": "String",
+        "scaleDbId": "String",
+
+        "ontologyDbId": "String"
+
+    },
+    "associations": {
+        "ObservationVariables": {
+            "type": "to_many",
+            "target": "ObservationVariable",
+            "targetKey": "scaleDbId",
+            "keyIn": "ObservationVariable",
+            "targetStorageType": "",
+            "label": "observationVariableName"
+        },
+        "OntologyReference": {
+            "type": "to_one",
+            "target": "OntologyReference",
+            "targetKey": "ontologyDbId",
+            "keyIn": "Scale",
+            "targetStorageType": "",
+            "label": "ontologyName"
+        }
+    }
+}

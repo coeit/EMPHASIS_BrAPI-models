@@ -19,23 +19,21 @@
         "locationDbId": "String"
     },
     "associations": {
-        "additionalInfo": {
+        "ObservationUnit": {
             "type": "to_one",
-            "target": "additionalInfo",
-            "targetKey": "",
-            "keyIn": "",
+            "target": "ObservationUnit",
+            "targetKey": "locationDbId",
+            "keyIn": "ObservationUnit",
             "targetStorageType": "",
-            "label": "additionalInfoName",
-            "sublabel": "additionalInfoDbId"
+            "label": "observationUnitName"
         },
-        "coordinates": {
+        "Study": {
             "type": "to_one",
-            "target": "coordinates",
-            "targetKey": "",
-            "keyIn": "",
+            "target": "Study",
+            "targetKey": "locationDbId",
+            "keyIn": "Study",
             "targetStorageType": "",
-            "label": "coordinatesName",
-            "sublabel": "coordinatesDbId"
+            "label": "studyName"
         }
     }
 }

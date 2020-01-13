@@ -8,6 +8,18 @@
         "unit": "String",
         "unitPUI": "String",
         "value": "String",
-        "valuePUI": "String"
+        "valuePUI": "String",
+
+        "studyDbId": "String"
+    },
+    "associations": {
+        "Study": {
+            "type": "to_one",
+            "target": "Study",
+            "targetKey": "studyDbId",
+            "keyIn": "EnvironmentParameter",
+            "targetStorageType": "",
+            "label": "studyName"
+        }
     }
 }

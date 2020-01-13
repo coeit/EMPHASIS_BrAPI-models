@@ -1,0 +1,35 @@
+{
+    "model": "Trait",
+    "storageType": "",
+    "attributes": {
+        "attribute": "String",
+        "entity": "String",
+        "mainAbbreviation": "String",
+        "status": "String",
+        "traitClass": "String",
+        "traitDescription": "String",
+        "traitName": "String",
+        "xref": "String",
+        "traitDbId": "String",
+
+        "ontologyDbId": "String"
+    },
+    "associations": {
+        "ObservationVariables": {
+            "type": "to_many",
+            "target": "ObservationVariable",
+            "targetKey": "traitDbId",
+            "keyIn": "ObservationVariable",
+            "targetStorageType": "",
+            "label": "observationVariableName"
+        },
+        "OntologyReference": {
+            "type": "to_one",
+            "target": "OntologyReference",
+            "targetKey": "ontologyDbId",
+            "keyIn": "Trait",
+            "targetStorageType": "",
+            "label": "ontologyName"
+        }
+    }
+}

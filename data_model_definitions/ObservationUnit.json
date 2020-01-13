@@ -20,38 +20,15 @@
         "observationUnitDbId": "String"
     },
     "associations": {
-        "observationUnitXref": {
+        "ObservationTreatments": {
             "type": "to_many",
-            "target": "observationUnitXref",
-            "targetKey": "observationUnitXref_id",
-            "sourceKey": "",
-            "keysIn": "",
-            "keyIn": "",
+            "target": "ObservationTreatment",
+            "targetKey": "observationUnitDbId",
+            "keyIn": "ObservationTreatment",
             "targetStorageType": "",
-            "label": "observationUnitXrefName",
-            "sublabel": "observationUnitXrefDbId"
+            "label": "factor"
         },
-        "treatments": {
-            "type": "to_many",
-            "target": "treatments",
-            "targetKey": "treatments_id",
-            "sourceKey": "",
-            "keysIn": "",
-            "keyIn": "",
-            "targetStorageType": "",
-            "label": "treatmentsName",
-            "sublabel": "treatmentsDbId"
-        },
-        "additionalInfo": {
-            "type": "to_one",
-            "target": "additionalInfo",
-            "targetKey": "",
-            "keyIn": "",
-            "targetStorageType": "",
-            "label": "additionalInfoName",
-            "sublabel": "additionalInfoDbId"
-        },
-        "observationUnitPosition": {
+        "ObservationUnitPosition": {
             "type": "to_one",
             "target": "observationUnitPosition",
             "targetKey": "",
@@ -60,7 +37,15 @@
             "label": "observationUnitPositionName",
             "sublabel": "observationUnitPositionDbId"
         },
-        "germplasm": {
+        "Observations": {
+            "type": "to_many",
+            "target": "Observation",
+            "targetKey": "observationUnitDbId",
+            "keyIn": "Observation",
+            "targetStorageType": "",
+            "label": "observationVariableName"
+        },
+        "Germplasm": {
             "type": "to_one",
             "target": "germplasm",
             "targetKey": "germplasmDbId",
@@ -69,7 +54,7 @@
             "label": "germplasmName",
             "sublabel": "germplasmDbId"
         },
-        "location": {
+        "Location": {
             "type": "to_one",
             "target": "location",
             "targetKey": "locationDbId",
@@ -78,7 +63,7 @@
             "label": "locationName",
             "sublabel": "locationDbId"
         },
-        "program": {
+        "Program": {
             "type": "to_one",
             "target": "program",
             "targetKey": "programDbId",
@@ -87,7 +72,7 @@
             "label": "programName",
             "sublabel": "programDbId"
         },
-        "study": {
+        "Study": {
             "type": "to_one",
             "target": "study",
             "targetKey": "studyDbId",
@@ -96,7 +81,7 @@
             "label": "studyName",
             "sublabel": "studyDbId"
         },
-        "trial": {
+        "Trial": {
             "type": "to_one",
             "target": "trial",
             "targetKey": "trialDbId",

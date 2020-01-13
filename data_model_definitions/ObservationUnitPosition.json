@@ -1,0 +1,23 @@
+{
+    "model": "ObservationUnitPosition",
+    "storageType": "",
+    "attributes": {
+        "blockNumber": "String",
+        "entryNumber": "String",
+        "positionCoordinateX": "String",
+        "positionCoordinateY": "String",
+        "replicate": "String",
+
+        "observationUnitDbId": "String"
+    },
+    "associations": {
+        "ObservationUnit": {
+            "type": "to_one",
+            "target": "ObservationUnit",
+            "targetKey": "observationUnitDbId",
+            "keyIn": "ObservationUnitPosition",
+            "targetStorageType": "",
+            "label": "observationUnitName"
+        }
+    }
+}
