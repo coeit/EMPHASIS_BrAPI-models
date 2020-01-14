@@ -2,7 +2,7 @@
     "model": "Study",
     "storageType": "",
     "attributes": {
-        "active": "boolean",
+        "active": "Boolean",
         "commonCropName": "String",
         "culturalPractices": "String",
         "documentationURL": "String",

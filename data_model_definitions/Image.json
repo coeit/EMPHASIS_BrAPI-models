@@ -16,54 +16,21 @@
         "imageDbId": "String"
     },
     "associations": {
-        "descriptiveOntologyTerms": {
+        "Observations": {
             "type": "to_many",
-            "target": "descriptiveOntologyTerms",
-            "targetKey": "descriptiveOntologyTerms_id",
-            "sourceKey": "",
-            "keysIn": "",
-            "keyIn": "",
+            "target": "Observation",
+            "targetKey": "imageDbId",
+            "keyIn": "Observation",
             "targetStorageType": "",
-            "label": "descriptiveOntologyTermsName",
-            "sublabel": "descriptiveOntologyTermsDbId"
-        },
-        "observationDbIds": {
-            "type": "to_many",
-            "target": "observationDbIds",
-            "targetKey": "observationDbIds_id",
-            "sourceKey": "",
-            "keysIn": "",
-            "keyIn": "",
-            "targetStorageType": "",
-            "label": "observationDbIdsName",
-            "sublabel": "observationDbIdsDbId"
-        },
-        "additionalInfo": {
-            "type": "to_one",
-            "target": "additionalInfo",
-            "targetKey": "",
-            "keyIn": "",
-            "targetStorageType": "",
-            "label": "additionalInfoName",
-            "sublabel": "additionalInfoDbId"
-        },
-        "imageLocation": {
-            "type": "to_one",
-            "target": "imageLocation",
-            "targetKey": "",
-            "keyIn": "",
-            "targetStorageType": "",
-            "label": "imageLocationName",
-            "sublabel": "imageLocationDbId"
+            "label": "observationVariableName"
         },
         "observationUnit": {
             "type": "to_one",
-            "target": "observationUnit",
+            "target": "ObservationUnit",
             "targetKey": "observationUnitDbId",
             "keyIn": "Image",
             "targetStorageType": "",
-            "label": "observationUnitName",
-            "sublabel": "observationUnitDbId"
+            "label": "observationUnitName"
         }
     }
 }

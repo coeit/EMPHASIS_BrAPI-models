@@ -15,7 +15,8 @@
         "value": "String",
         "observationDbId": "String",
 
-        "seasonDbId": "String"
+        "seasonDbId": "String",
+        "imageDbId": "String"
     },
     "associations": {
         "Season": {
@@ -57,6 +58,14 @@
             "keyIn": "Observation",
             "targetStorageType": "",
             "label": "studyName"
+        },
+        "Image": {
+            "type": "to_one",
+            "target": "Image",
+            "targetKey": "imageDbId",
+            "keyIn": "Observation",
+            "targetStorageType": "",
+            "label": "imageName"
         }
     }
 }

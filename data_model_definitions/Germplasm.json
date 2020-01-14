@@ -31,7 +31,7 @@
         "BreedingMethod": {
             "type": "to_one",
             "target": "BreedingMethod",
-            "targetKey": "BreedingMethodDbId",
+            "targetKey": "breedingMethodDbId",
             "keyIn": "Germplasm",
             "targetStorageType": "",
             "label": "breedingMethodName"

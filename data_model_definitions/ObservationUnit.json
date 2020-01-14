@@ -30,12 +30,11 @@
         },
         "ObservationUnitPosition": {
             "type": "to_one",
-            "target": "observationUnitPosition",
-            "targetKey": "",
-            "keyIn": "",
+            "target": "ObservationUnitPosition",
+            "targetKey": "observationUnitDbId",
+            "keyIn": "ObservationUnitPosition",
             "targetStorageType": "",
-            "label": "observationUnitPositionName",
-            "sublabel": "observationUnitPositionDbId"
+            "label": "observationUnitPositionName"
         },
         "Observations": {
             "type": "to_many",
@@ -47,48 +46,51 @@
         },
         "Germplasm": {
             "type": "to_one",
-            "target": "germplasm",
+            "target": "Germplasm",
             "targetKey": "germplasmDbId",
             "keyIn": "ObservationUnit",
             "targetStorageType": "",
-            "label": "germplasmName",
-            "sublabel": "germplasmDbId"
+            "label": "germplasmName"
         },
         "Location": {
             "type": "to_one",
-            "target": "location",
+            "target": "Location",
             "targetKey": "locationDbId",
             "keyIn": "ObservationUnit",
             "targetStorageType": "",
-            "label": "locationName",
-            "sublabel": "locationDbId"
+            "label": "locationName"
         },
         "Program": {
             "type": "to_one",
-            "target": "program",
+            "target": "Program",
             "targetKey": "programDbId",
             "keyIn": "ObservationUnit",
             "targetStorageType": "",
-            "label": "programName",
-            "sublabel": "programDbId"
+            "label": "programName"
         },
         "Study": {
             "type": "to_one",
-            "target": "study",
+            "target": "Study",
             "targetKey": "studyDbId",
             "keyIn": "ObservationUnit",
             "targetStorageType": "",
-            "label": "studyName",
-            "sublabel": "studyDbId"
+            "label": "studyName"
         },
         "Trial": {
             "type": "to_one",
-            "target": "trial",
+            "target": "Trial",
             "targetKey": "trialDbId",
             "keyIn": "ObservationUnit",
             "targetStorageType": "",
-            "label": "trialName",
-            "sublabel": "trialDbId"
+            "label": "trialName"
+        },
+        "Images": {
+            "type": "to_many",
+            "target": "Image",
+            "targetKey": "observationUnitDbId",
+            "keyIn": "Image",
+            "targetStorageType": "",
+            "label": "imageName"
         }
     }
 }

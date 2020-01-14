@@ -2,7 +2,7 @@
     "model": "Trial",
     "storageType": "",
     "attributes": {
-        "active": "boolean",
+        "active": "Boolean",
         "commonCropName": "String",
         "documentationURL": "String",
         "endDate": "String",
