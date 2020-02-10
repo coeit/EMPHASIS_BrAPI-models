@@ -1,0 +1,42 @@
+{
+    "model": "Event",
+    "storageType": "",
+    "attributes": {
+        "eventDbId": "String",
+        "eventDescription": "String",
+        "eventType": "String",
+        "eventTypeDbId": "String",
+        "studyDbId": "String",
+
+        "date": "String"
+
+    },
+    "associations": {
+        "eventParameters": {
+            "type": "to_many",
+            "target": "EventParamter",
+            "targetKey": "eventDbId",
+            "keyIn": "EventParameter",
+            "targetStorageType": "",
+            "label": "key"
+        },
+        "ObservationUnits": {
+            "type": "to_many",
+            "target": "ObservationUnit",
+            "targetKey": "observationUnitDbId",
+            "sourceKey": "eventDbId",
+            "keysIn": "ObservationUnit_to_Event",
+            "targetStorageType": "",
+            "label": "observationUnitName"
+        },
+        "Study": {
+            "type": "to_one",
+            "target": "study",
+            "targetKey": "studyDbId",
+            "keyIn": "Event",
+            "targetStorageType": "",
+            "label": "studyName",
+            "sublabel": "studyDbId"
+        }
+    }
+}

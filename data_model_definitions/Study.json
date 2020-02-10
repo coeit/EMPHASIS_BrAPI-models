@@ -78,6 +78,14 @@
             "keyIn": "Observation",
             "targetStorageType": "",
             "label": "observationVariableName"
+        },
+        "Events": {
+            "type": "to_many",
+            "target": "Event",
+            "targetKey": "studyDbId",
+            "keyIn": "Event",
+            "targetStorageType": "",
+            "label": "eventType"
         }
     }
 }

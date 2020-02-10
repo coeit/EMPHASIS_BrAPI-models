@@ -91,6 +91,15 @@
             "keyIn": "Image",
             "targetStorageType": "",
             "label": "imageName"
+        },
+        "Events": {
+            "type": "to_many",
+            "target": "Event",
+            "targetKey": "eventDbId",
+            "sourceKey": "observationUnitDbId",
+            "keysIn": "ObservationUnit_to_Event",
+            "targetStorageType": "",
+            "label": "eventType"
         }
     }
 }
