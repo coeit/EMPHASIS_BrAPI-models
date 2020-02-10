@@ -14,7 +14,7 @@
     "associations": {
         "eventParameters": {
             "type": "to_many",
-            "target": "EventParamter",
+            "target": "EventParameter",
             "targetKey": "eventDbId",
             "keyIn": "EventParameter",
             "targetStorageType": "",
@@ -31,7 +31,7 @@
         },
         "Study": {
             "type": "to_one",
-            "target": "study",
+            "target": "Study",
             "targetKey": "studyDbId",
             "keyIn": "Event",
             "targetStorageType": "",
