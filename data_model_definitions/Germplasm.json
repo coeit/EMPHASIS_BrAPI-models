@@ -3,7 +3,7 @@
     "storageType": "",
     "attributes": {
         "accessionNumber": "String",
-        "acquisitionDate": "String",
+        "acquisitionDate": "Date",
         "breedingMethodDbId": "String",
         "commonCropName": "String",
         "countryOfOriginCode": "String",

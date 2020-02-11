@@ -8,7 +8,7 @@
         "eventTypeDbId": "String",
         "studyDbId": "String",
 
-        "date": "String"
+        "date": "DateTime"
 
     },
     "associations": {
