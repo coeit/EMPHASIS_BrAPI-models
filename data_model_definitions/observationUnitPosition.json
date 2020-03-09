@@ -1,5 +1,5 @@
 {
-    "model": "ObservationUnitPosition",
+    "model": "observationUnitPosition",
     "storageType": "",
     "attributes": {
         "blockNumber": "String",
@@ -11,13 +11,14 @@
         "observationUnitDbId": "String"
     },
     "associations": {
-        "ObservationUnit": {
+        "observationUnit": {
             "type": "to_one",
-            "target": "ObservationUnit",
+            "target": "observationUnit",
             "targetKey": "observationUnitDbId",
-            "keyIn": "ObservationUnitPosition",
+            "keyIn": "observationUnitPosition",
             "targetStorageType": "",
             "label": "observationUnitName"
         }
-    }
+    },
+    "internalId": "observationUnitDbId"
 }

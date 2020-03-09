@@ -1,5 +1,5 @@
 {
-    "model": "BreedingMethod",
+    "model": "breedingMethod",
     "storageType": "",
     "attributes": {
         "abbreviation": "String",
@@ -8,13 +8,14 @@
         "description": "String"
     },
     "associations": {
-        "Germplasm": {
+        "germplasm": {
             "type": "to_many",
-            "target": "Germplasm",
+            "target": "germplasm",
             "targetKey": "breedingMethodDbId",
-            "keyIn": "Germplasm",
+            "keyIn": "germplasm",
             "targetStorageType": "",
             "label": "germplasmName"
         }
-    }
+    },
+    "internalId": "breedingMethodDbId"
 }

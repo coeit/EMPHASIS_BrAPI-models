@@ -1,5 +1,5 @@
 {
-    "model": "EventParameter",
+    "model": "eventParameter",
     "storageType": "",
     "attributes": {
         "key": "String",
@@ -9,11 +9,11 @@
         "eventDbId": "String"
     },
     "associations": {
-        "Event": {
+        "event": {
             "type": "to_one",
-            "target": "Event",
+            "target": "event",
             "targetKey": "eventDbId",
-            "keyIn": "EventParameter",
+            "keyIn": "eventParameter",
             "targetStorageType": "",
             "label": "eventType"
         }

@@ -1,5 +1,5 @@
 {
-    "model": "Program",
+    "model": "program",
     "storageType": "",
     "attributes": {
         "abbreviation": "String",
@@ -14,19 +14,20 @@
     "associations" : {
         "Trials" : {
             "type": "to_many",
-            "target": "Trial",
+            "target": "trial",
             "targetKey": "programDbId",
-            "keyIn": "Trial",
+            "keyIn": "trial",
             "targetStorageType": "",
             "label": "TrialName"
         },
         "ObservationUnits": {
             "type": "to_many",
-            "target": "ObservationUnit",
+            "target": "observationUnit",
             "targetKey": "programDbId",
-            "keyIn": "ObservationUnit",
+            "keyIn": "observationUnit",
             "targetStorageType": "",
             "label": "observationUnitName"
         }
-    }
+    },
+    "internalId": "programDbId"
 }

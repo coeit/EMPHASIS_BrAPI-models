@@ -1,5 +1,5 @@
 {
-    "model": "ObservationTreatment",
+    "model": "observationTreatment",
     "storageType": "",
     "attributes": {
         "factor": "String",
@@ -8,11 +8,11 @@
         "observationUnitDbId": "String"
     },
     "associations": {
-        "ObservationUnit": {
+        "observationUnit": {
             "type": "to_one",
-            "target": "ObservationUnit",
+            "target": "observationUnit",
             "targetKey": "observationUnitDbId",
-            "keyIn": "ObservationTreatment",
+            "keyIn": "observationTreatment",
             "targetStorageType": "",
             "label": "observationUnitName"
         }

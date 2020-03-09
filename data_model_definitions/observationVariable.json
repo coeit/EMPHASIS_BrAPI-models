@@ -1,5 +1,5 @@
 {
-    "model": "ObservationVariable",
+    "model": "observationVariable",
     "storageType": "",
     "attributes": {
         "commonCropName": "String",
@@ -21,45 +21,46 @@
         "ontologyDbId": "String"
     },
     "associations": {
-        "Method": {
+        "method": {
             "type": "to_one",
-            "target": "Method",
+            "target": "method",
             "targetKey": "methodDbId",
-            "keyIn": "ObservationVariable",
+            "keyIn": "observationVariable",
             "targetStorageType": "",
             "label": "methodName"
         },
-        "OntologyReference": {
+        "ontologyReference": {
             "type": "to_one",
-            "target": "OntologyReference",
+            "target": "ontologyReference",
             "targetKey": "ontologyDbId",
-            "keyIn": "ObservationVariable",
+            "keyIn": "observationVariable",
             "targetStorageType": "",
             "label": "ontologyName"
         },
-        "Scale": {
+        "scale": {
             "type": "to_one",
-            "target": "Scale",
+            "target": "scale",
             "targetKey": "scaleDbId",
-            "keyIn": "ObservationVariable",
+            "keyIn": "observationVariable",
             "targetStorageType": "",
             "label": "scaleName"
         },
-        "Trait": {
+        "trait": {
             "type": "to_one",
-            "target": "Trait",
+            "target": "trait",
             "targetKey": "traitDbId",
-            "keyIn": "ObservationVariable",
+            "keyIn": "observationVariable",
             "targetStorageType": "",
             "label": "traitName"
         },
         "Observations": {
             "type": "to_many",
-            "target": "Observation",
+            "target": "observation",
             "targetKey": "observationVariableDbId",
-            "keyIn": "Observation",
+            "keyIn": "observation",
             "targetStorageType": "",
             "label": "observationVariableName"
         }
-    }
+    },
+    "internalId": "observationVariableDbId"
 }

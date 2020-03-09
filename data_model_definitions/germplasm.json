@@ -1,5 +1,5 @@
 {
-    "model": "Germplasm",
+    "model": "germplasm",
     "storageType": "",
     "attributes": {
         "accessionNumber": "String",
@@ -28,29 +28,30 @@
         "biologicalStatusOfAccessionCode": "String"
     },
     "associations": {
-        "BreedingMethod": {
+        "breedingMethod": {
             "type": "to_one",
-            "target": "BreedingMethod",
+            "target": "breedingMethod",
             "targetKey": "breedingMethodDbId",
-            "keyIn": "Germplasm",
+            "keyIn": "germplasm",
             "targetStorageType": "",
             "label": "breedingMethodName"
         },
         "ObservationUnits": {
             "type": "to_many",
-            "target": "ObservationUnit",
+            "target": "observationUnit",
             "targetKey": "germplasmDbId",
-            "keyIn": "ObservationUnit",
+            "keyIn": "observationUnit",
             "targetStorageType": "",
             "label": "observationUnitName"
         },
         "Observations": {
             "type": "to_many",
-            "target": "Observation",
+            "target": "observation",
             "targetKey": "germplasmDbId",
-            "keyIn": "Observation",
+            "keyIn": "observation",
             "targetStorageType": "",
             "label": "observationVariableName"
         }
-    }
+    },
+    "internalId": "germplasmDbId"
 }

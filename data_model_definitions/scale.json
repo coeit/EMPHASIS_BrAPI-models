@@ -1,5 +1,5 @@
 {
-    "model": "Scale",
+    "model": "scale",
     "storageType": "",
     "attributes": {
         "decimalPlaces": "Int",
@@ -13,19 +13,20 @@
     "associations": {
         "ObservationVariables": {
             "type": "to_many",
-            "target": "ObservationVariable",
+            "target": "observationVariable",
             "targetKey": "scaleDbId",
-            "keyIn": "ObservationVariable",
+            "keyIn": "observationVariable",
             "targetStorageType": "",
             "label": "observationVariableName"
         },
-        "OntologyReference": {
+        "ontologyReference": {
             "type": "to_one",
-            "target": "OntologyReference",
+            "target": "ontologyReference",
             "targetKey": "ontologyDbId",
-            "keyIn": "Scale",
+            "keyIn": "scale",
             "targetStorageType": "",
             "label": "ontologyName"
         }
-    }
+    },
+    "internalId": "scaleDbId"
 }

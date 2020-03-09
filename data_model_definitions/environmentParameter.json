@@ -1,5 +1,5 @@
 {
-    "model": "EnvironmentParameter",
+    "model": "environmentParameter",
     "storageType": "",
     "attributes": {
         "description": "String",
@@ -13,11 +13,11 @@
         "studyDbId": "String"
     },
     "associations": {
-        "Study": {
+        "study": {
             "type": "to_one",
-            "target": "Study",
+            "target": "study",
             "targetKey": "studyDbId",
-            "keyIn": "EnvironmentParameter",
+            "keyIn": "environmentParameter",
             "targetStorageType": "",
             "label": "studyName"
         }

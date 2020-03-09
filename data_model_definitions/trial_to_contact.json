@@ -1,5 +1,5 @@
 {
-    "model": "Trial_to_Contact",
+    "model": "trial_to_contact",
     "storageType": "",
     "attributes":{
         "trialDbId": "String",

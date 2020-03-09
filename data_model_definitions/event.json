@@ -1,5 +1,5 @@
 {
-    "model": "Event",
+    "model": "event",
     "storageType": "",
     "attributes": {
         "eventDbId": "String",
@@ -14,29 +14,30 @@
     "associations": {
         "eventParameters": {
             "type": "to_many",
-            "target": "EventParameter",
+            "target": "eventParameter",
             "targetKey": "eventDbId",
-            "keyIn": "EventParameter",
+            "keyIn": "eventParameter",
             "targetStorageType": "",
             "label": "key"
         },
         "ObservationUnits": {
             "type": "to_many",
-            "target": "ObservationUnit",
+            "target": "observationUnit",
             "targetKey": "observationUnitDbId",
             "sourceKey": "eventDbId",
-            "keysIn": "ObservationUnit_to_Event",
+            "keysIn": "observationUnit_to_event",
             "targetStorageType": "",
             "label": "observationUnitName"
         },
-        "Study": {
+        "study": {
             "type": "to_one",
-            "target": "Study",
+            "target": "study",
             "targetKey": "studyDbId",
-            "keyIn": "Event",
+            "keyIn": "event",
             "targetStorageType": "",
             "label": "studyName",
             "sublabel": "studyDbId"
         }
-    }
+    },
+    "internalId": "eventType"
 }

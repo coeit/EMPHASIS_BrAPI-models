@@ -1,5 +1,5 @@
 {
-    "model": "Observation",
+    "model": "observation",
     "storageType": "",
     "attributes": {
         "collector": "String",
@@ -19,53 +19,54 @@
         "imageDbId": "String"
     },
     "associations": {
-        "Season": {
+        "season": {
             "type": "to_one",
-            "target": "Season",
+            "target": "season",
             "targetKey": "seasonDbId",
-            "keyIn": "Observation",
+            "keyIn": "observation",
             "targetStorageType": "",
             "label": "season"
         },
-        "Germplasm": {
+        "germplasm": {
             "type": "to_one",
-            "target": "Germplasm",
+            "target": "germplasm",
             "targetKey": "germplasmDbId",
-            "keyIn": "Observation",
+            "keyIn": "observation",
             "targetStorageType": "",
             "label": "germplasmName"
         },
-        "ObservationUnit": {
+        "observationUnit": {
             "type": "to_one",
-            "target": "ObservationUnit",
+            "target": "observationUnit",
             "targetKey": "observationUnitDbId",
-            "keyIn": "Observation",
+            "keyIn": "observation",
             "targetStorageType": "",
             "label": "observationUnitName"
         },
-        "ObservationVariable": {
+        "observationVariable": {
             "type": "to_one",
-            "target": "ObservationVariable",
+            "target": "observationVariable",
             "targetKey": "observationVariableDbId",
-            "keyIn": "Observation",
+            "keyIn": "observation",
             "targetStorageType": "",
             "label": "observationVariableName"
         },
-        "Study": {
+        "study": {
             "type": "to_one",
-            "target": "Study",
+            "target": "study",
             "targetKey": "studyDbId",
-            "keyIn": "Observation",
+            "keyIn": "observation",
             "targetStorageType": "",
             "label": "studyName"
         },
-        "Image": {
+        "image": {
             "type": "to_one",
-            "target": "Image",
+            "target": "image",
             "targetKey": "imageDbId",
-            "keyIn": "Observation",
+            "keyIn": "observation",
             "targetStorageType": "",
             "label": "imageName"
         }
-    }
+    },
+    "internalId": "observationDbId"
 }

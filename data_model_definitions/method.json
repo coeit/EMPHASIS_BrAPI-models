@@ -1,5 +1,5 @@
 {
-    "model": "Method",
+    "model": "method",
     "storageType": "",
     "attributes": {
         "description": "String",
@@ -14,19 +14,20 @@
     "associations": {
         "ObservationVariables": {
             "type": "to_many",
-            "target": "ObservationVariable",
+            "target": "observationVariable",
             "targetKey": "methodDbId",
-            "keyIn": "ObservationVariable",
+            "keyIn": "observationVariable",
             "targetStorageType": "",
             "label": "observationVariableName"
         },
-        "OntologyReference": {
+        "ontologyReference": {
             "type": "to_one",
-            "target": "OntologyReference",
+            "target": "ontologyReference",
             "targetKey": "ontologyDbId",
-            "keyIn": "Method",
+            "keyIn": "method",
             "targetStorageType": "",
             "label": "ontologyName"
         }
-    }
+    },
+    "internalId": "methodDbId"
 }

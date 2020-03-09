@@ -1,5 +1,5 @@
 {
-    "model": "OntologyReference",
+    "model": "ontologyReference",
     "storageType": "",
     "attributes": {
         "documentationURL": "String",
@@ -10,35 +10,36 @@
     "associations": {
         "Scales" : {
             "type": "to_many",
-            "target": "Scale",
+            "target": "scale",
             "targetKey": "ontologyDbId",
-            "keyIn": "Scale",
+            "keyIn": "scale",
             "targetStorageType": "",
             "label": "scaleName"
         },
         "Methods" : {
             "type": "to_many",
-            "target": "Method",
+            "target": "method",
             "targetKey": "ontologyDbId",
-            "keyIn": "Method",
+            "keyIn": "method",
             "targetStorageType": "",
             "label": "methodName"
         },
         "Traits" : {
             "type": "to_many",
-            "target": "Trait",
+            "target": "trait",
             "targetKey": "ontologyDbId",
-            "keyIn": "Trait",
+            "keyIn": "trait",
             "targetStorageType": "",
             "label": "traitName"
         },
         "ObservationVariables" : {
             "type": "to_many",
-            "target": "ObservationVariable",
+            "target": "observationVariable",
             "targetKey": "ontologyDbId",
-            "keyIn": "ObservationVariable",
+            "keyIn": "observationVariable",
             "targetStorageType": "",
             "label": "ObservationVariableName"
         }
-    }
+    },
+    "internalId": "ontologyDbId"
 }

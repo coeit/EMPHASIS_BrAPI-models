@@ -1,5 +1,5 @@
 {
-    "model": "Location",
+    "model": "location",
     "storageType": "",
     "attributes": {
         "abbreviation": "String",
@@ -19,21 +19,22 @@
         "locationDbId": "String"
     },
     "associations": {
-        "ObservationUnit": {
-            "type": "to_one",
-            "target": "ObservationUnit",
+        "ObservationUnits": {
+            "type": "to_many",
+            "target": "observationUnit",
             "targetKey": "locationDbId",
-            "keyIn": "ObservationUnit",
+            "keyIn": "observationUnit",
             "targetStorageType": "",
             "label": "observationUnitName"
         },
-        "Study": {
-            "type": "to_one",
-            "target": "Study",
+        "Studies": {
+            "type": "to_many",
+            "target": "study",
             "targetKey": "locationDbId",
-            "keyIn": "Study",
+            "keyIn": "study",
             "targetStorageType": "",
             "label": "studyName"
         }
-    }
+    },
+    "internalId": "locationDbId"
 }

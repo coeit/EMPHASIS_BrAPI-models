@@ -1,5 +1,5 @@
 {
-    "model": "Trial",
+    "model": "trial",
     "storageType": "",
     "attributes": {
         "active": "Boolean",
@@ -17,36 +17,37 @@
     "associations": {
         "Contacts": {
             "type": "to_many",
-            "target": "Contact",
+            "target": "contact",
             "targetKey": "contactDbId",
             "sourceKey": "trialDbId",
-            "keysIn": "Trial_to_Contact",
+            "keysIn": "trial_to_contact",
             "targetStorageType": "",
             "label": "name"
         },
-        "Program": {
+        "program": {
             "type": "to_one",
-            "target": "Program",
+            "target": "program",
             "targetKey": "programDbId",
-            "keyIn": "Trial",
+            "keyIn": "trial",
             "targetStorageType": "",
             "label": "programName"
         },
         "ObservationUnits": {
             "type": "to_many",
-            "target": "ObservationUnit",
+            "target": "observationUnit",
             "targetKey": "trialDbId",
-            "keyIn": "ObservationUnit",
+            "keyIn": "observationUnit",
             "targetStorageType": "",
             "label": "observationUnitName"
         },
         "Studies": {
             "type": "to_many",
-            "target": "Study",
+            "target": "study",
             "targetKey": "trialDbId",
-            "keyIn": "Study",
+            "keyIn": "study",
             "targetStorageType": "",
             "label": "studyName"
         }
-    }
+    },
+    "internalId": "trialDbId"
 }

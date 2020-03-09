@@ -1,5 +1,5 @@
 {
-    "model": "Trait",
+    "model": "trait",
     "storageType": "",
     "attributes": {
         "attribute": "String",
@@ -17,19 +17,20 @@
     "associations": {
         "ObservationVariables": {
             "type": "to_many",
-            "target": "ObservationVariable",
+            "target": "observationVariable",
             "targetKey": "traitDbId",
-            "keyIn": "ObservationVariable",
+            "keyIn": "observationVariable",
             "targetStorageType": "",
             "label": "observationVariableName"
         },
-        "OntologyReference": {
+        "ontologyReference": {
             "type": "to_one",
-            "target": "OntologyReference",
+            "target": "ontologyReference",
             "targetKey": "ontologyDbId",
-            "keyIn": "Trait",
+            "keyIn": "trait",
             "targetStorageType": "",
             "label": "ontologyName"
         }
-    }
+    },
+    "internalId": "traitDbId"
 }

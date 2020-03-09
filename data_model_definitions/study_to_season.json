@@ -1,8 +1,8 @@
 {
-    "model": "Study_to_Contact",
+    "model": "study_to_season",
     "storageType": "",
     "attributes":{
         "studyDbId": "String",
-        "contactDbId": "String"
+        "seasonDbId": "String"
     }
 }

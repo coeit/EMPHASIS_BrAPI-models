@@ -1,5 +1,5 @@
 {
-    "model": "Contact",
+    "model": "contact",
     "storageType": "",
     "attributes": {
         "contactDbId": "String",
@@ -12,21 +12,22 @@
     "associations": {
         "Studies": {
             "type": "to_many",
-            "target": "Study",
+            "target": "study",
             "targetKey": "studyDbId",
             "sourceKey": "contactDbId",
-            "keysIn": "Study_to_Contact",
+            "keysIn": "study_to_contact",
             "targetStorageType": "",
             "label": "studyName"
         },
         "Trials": {
             "type": "to_many",
-            "target": "Trial",
+            "target": "trial",
             "targetKey": "trialDbId",
             "sourceKey": "contactDbId",
-            "keysIn": "Trial_to_Contact",
+            "keysIn": "trial_to_contact",
             "targetStorageType": "",
             "label": "trialName"
         }
-    }
+    },
+    "internalId": "contactDbId"
 }
