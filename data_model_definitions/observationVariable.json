@@ -53,7 +53,7 @@
             "targetStorageType": "",
             "label": "traitName"
         },
-        "Observations": {
+        "observations": {
             "type": "to_many",
             "target": "observation",
             "targetKey": "observationVariableDbId",

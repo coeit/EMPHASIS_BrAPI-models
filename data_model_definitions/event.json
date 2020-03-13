@@ -20,7 +20,7 @@
             "targetStorageType": "",
             "label": "key"
         },
-        "ObservationUnits": {
+        "observationUnits": {
             "type": "to_many",
             "target": "observationUnit",
             "targetKey": "observationUnitDbId",

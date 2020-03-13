@@ -7,7 +7,7 @@
         "year": "Int"
     },
     "associations": {
-        "Observations": {
+        "observations": {
             "type": "to_many",
             "target": "observation",
             "targetKey": "seasonDbId",
@@ -15,7 +15,7 @@
             "targetStorageType": "",
             "label": "observationVariableName"
         },
-        "Studies": {
+        "studies": {
             "type": "to_many",
             "target": "study",
             "targetKey": "studyDbId",

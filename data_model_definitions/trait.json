@@ -15,7 +15,7 @@
         "ontologyDbId": "String"
     },
     "associations": {
-        "ObservationVariables": {
+        "observationVariables": {
             "type": "to_many",
             "target": "observationVariable",
             "targetKey": "traitDbId",

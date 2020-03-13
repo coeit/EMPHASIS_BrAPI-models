@@ -8,7 +8,7 @@
         "version": "String"
     },
     "associations": {
-        "Scales" : {
+        "scales" : {
             "type": "to_many",
             "target": "scale",
             "targetKey": "ontologyDbId",
@@ -16,7 +16,7 @@
             "targetStorageType": "",
             "label": "scaleName"
         },
-        "Methods" : {
+        "methods" : {
             "type": "to_many",
             "target": "method",
             "targetKey": "ontologyDbId",
@@ -24,7 +24,7 @@
             "targetStorageType": "",
             "label": "methodName"
         },
-        "Traits" : {
+        "traits" : {
             "type": "to_many",
             "target": "trait",
             "targetKey": "ontologyDbId",
@@ -32,7 +32,7 @@
             "targetStorageType": "",
             "label": "traitName"
         },
-        "ObservationVariables" : {
+        "observationVariables" : {
             "type": "to_many",
             "target": "observationVariable",
             "targetKey": "ontologyDbId",

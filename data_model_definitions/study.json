@@ -20,7 +20,7 @@
         "locationDbId": "String"
     },
     "associations": {
-        "Contacts": {
+        "contacts": {
             "type": "to_many",
             "target": "contact",
             "targetKey": "contactDbId",
@@ -29,7 +29,7 @@
             "targetStorageType": "",
             "label": "name"
         },
-        "EnvironmentParameters": {
+        "environmentParameters": {
             "type": "to_many",
             "target": "environmentParameter",
             "targetKey": "studyDbId",
@@ -38,7 +38,7 @@
             "label": "parameterName",
             "sublabel": "environmentParametersDbId"
         },
-        "Seasons": {
+        "seasons": {
             "type": "to_many",
             "target": "season",
             "targetKey": "seasonDbId",
@@ -63,7 +63,7 @@
             "targetStorageType": "",
             "label": "trialName"
         },
-        "ObservationUnits": {
+        "observationUnits": {
             "type": "to_many",
             "target": "observationUnit",
             "targetKey": "studyDbId",
@@ -71,7 +71,7 @@
             "targetStorageType": "",
             "label": "observationUnitName"
         },
-        "Observations": {
+        "observations": {
             "type": "to_many",
             "target": "observation",
             "targetKey": "studyDbId",
@@ -79,7 +79,7 @@
             "targetStorageType": "",
             "label": "observationVariableName"
         },
-        "Events": {
+        "events": {
             "type": "to_many",
             "target": "event",
             "targetKey": "studyDbId",

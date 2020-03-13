@@ -19,7 +19,7 @@
         "locationDbId": "String"
     },
     "associations": {
-        "ObservationUnits": {
+        "observationUnits": {
             "type": "to_many",
             "target": "observationUnit",
             "targetKey": "locationDbId",
@@ -27,7 +27,7 @@
             "targetStorageType": "",
             "label": "observationUnitName"
         },
-        "Studies": {
+        "studies": {
             "type": "to_many",
             "target": "study",
             "targetKey": "locationDbId",

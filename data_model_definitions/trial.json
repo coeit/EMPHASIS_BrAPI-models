@@ -15,7 +15,7 @@
         "trialDbId": "String"
     },
     "associations": {
-        "Contacts": {
+        "contacts": {
             "type": "to_many",
             "target": "contact",
             "targetKey": "contactDbId",
@@ -32,7 +32,7 @@
             "targetStorageType": "",
             "label": "programName"
         },
-        "ObservationUnits": {
+        "observationUnits": {
             "type": "to_many",
             "target": "observationUnit",
             "targetKey": "trialDbId",
@@ -40,7 +40,7 @@
             "targetStorageType": "",
             "label": "observationUnitName"
         },
-        "Studies": {
+        "studies": {
             "type": "to_many",
             "target": "study",
             "targetKey": "trialDbId",

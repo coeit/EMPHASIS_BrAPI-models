@@ -16,7 +16,7 @@
         "imageDbId": "String"
     },
     "associations": {
-        "Observations": {
+        "observations": {
             "type": "to_many",
             "target": "observation",
             "targetKey": "imageDbId",

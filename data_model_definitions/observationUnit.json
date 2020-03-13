@@ -20,7 +20,7 @@
         "observationUnitDbId": "String"
     },
     "associations": {
-        "ObservationTreatments": {
+        "observationTreatments": {
             "type": "to_many",
             "target": "observationTreatment",
             "targetKey": "observationUnitDbId",
@@ -36,7 +36,7 @@
             "targetStorageType": "",
             "label": "observationUnitPositionName"
         },
-        "Observations": {
+        "observations": {
             "type": "to_many",
             "target": "observation",
             "targetKey": "observationUnitDbId",
@@ -84,7 +84,7 @@
             "targetStorageType": "",
             "label": "trialName"
         },
-        "Images": {
+        "images": {
             "type": "to_many",
             "target": "image",
             "targetKey": "observationUnitDbId",
@@ -92,7 +92,7 @@
             "targetStorageType": "",
             "label": "imageName"
         },
-        "Events": {
+        "events": {
             "type": "to_many",
             "target": "event",
             "targetKey": "eventDbId",

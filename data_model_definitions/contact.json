@@ -10,7 +10,7 @@
         "type": "String"
     },
     "associations": {
-        "Studies": {
+        "studies": {
             "type": "to_many",
             "target": "study",
             "targetKey": "studyDbId",
@@ -19,7 +19,7 @@
             "targetStorageType": "",
             "label": "studyName"
         },
-        "Trials": {
+        "trials": {
             "type": "to_many",
             "target": "trial",
             "targetKey": "trialDbId",

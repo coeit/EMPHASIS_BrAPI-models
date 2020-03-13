@@ -12,7 +12,7 @@
         "programDbId": "String"
     },
     "associations" : {
-        "Trials" : {
+        "trials" : {
             "type": "to_many",
             "target": "trial",
             "targetKey": "programDbId",
@@ -20,7 +20,7 @@
             "targetStorageType": "",
             "label": "TrialName"
         },
-        "ObservationUnits": {
+        "observationUnits": {
             "type": "to_many",
             "target": "observationUnit",
             "targetKey": "programDbId",
