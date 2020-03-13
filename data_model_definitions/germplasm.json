@@ -50,7 +50,8 @@
             "targetKey": "germplasmDbId",
             "keyIn": "observation",
             "targetStorageType": "",
-            "label": "observationVariableName"
+            "label": "observationVariableName",
+            "sublabel" : "value"
         }
     },
     "internalId": "germplasmDbId"

@@ -22,7 +22,8 @@
             "targetKey": "imageDbId",
             "keyIn": "observation",
             "targetStorageType": "",
-            "label": "observationVariableName"
+            "label": "observationVariableName",
+            "sublabel" : "value"
         },
         "observationUnit": {
             "type": "to_one",

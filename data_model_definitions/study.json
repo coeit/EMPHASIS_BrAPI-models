@@ -77,7 +77,8 @@
             "targetKey": "studyDbId",
             "keyIn": "observation",
             "targetStorageType": "",
-            "label": "observationVariableName"
+            "label": "observationVariableName",
+            "sublabel" : "value"
         },
         "events": {
             "type": "to_many",

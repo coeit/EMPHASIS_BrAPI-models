@@ -13,7 +13,8 @@
             "targetKey": "seasonDbId",
             "keyIn": "observation",
             "targetStorageType": "",
-            "label": "observationVariableName"
+            "label": "observationVariableName",
+            "sublabel" : "value"
         },
         "studies": {
             "type": "to_many",

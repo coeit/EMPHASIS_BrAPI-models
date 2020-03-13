@@ -42,7 +42,8 @@
             "targetKey": "observationUnitDbId",
             "keyIn": "observation",
             "targetStorageType": "",
-            "label": "observationVariableName"
+            "label": "observationVariableName",
+            "sublabel" : "value"
         },
         "germplasm": {
             "type": "to_one",

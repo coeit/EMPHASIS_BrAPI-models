@@ -59,7 +59,8 @@
             "targetKey": "observationVariableDbId",
             "keyIn": "observation",
             "targetStorageType": "",
-            "label": "observationVariableName"
+            "label": "observationVariableName",
+            "sublabel" : "value"
         }
     },
     "internalId": "observationVariableDbId"
