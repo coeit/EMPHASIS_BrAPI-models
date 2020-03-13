@@ -10,7 +10,7 @@
         "language": "String",
         "scientist": "String",
         "status": "String",
-        "submissionTimestamp": "String",
+        "submissionTimestamp": "DateTime",
         "xref": "String",
         "observationVariableDbId": "String",
         "observationVariableName": "String",

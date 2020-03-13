@@ -5,7 +5,7 @@
         "collector": "String",
         "germplasmDbId": "String",
         "germplasmName": "String",
-        "observationTimeStamp": "String",
+        "observationTimeStamp": "DateTime",
         "observationUnitDbId": "String",
         "observationUnitName": "String",
         "observationVariableDbId": "String",

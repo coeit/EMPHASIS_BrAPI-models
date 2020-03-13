@@ -8,7 +8,7 @@
         "imageFileSize": "Int",
         "imageHeight": "Int",
         "imageName": "String",
-        "imageTimeStamp": "String",
+        "imageTimeStamp": "DateTime",
         "imageURL": "String",
         "imageWidth": "Int",
         "mimeType": "String",
